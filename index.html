@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To Do List 📝</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Simple To Do List 📝</h1>
+            <p>Apa yang akan kamu lakukan hari ini? *catat disini ya!*</p>
+        </header>
+
+        <div class="input-section">
+            <input type="text" id="todo-input" placeholder="Tambahkan kegiatan baru...">
+            <button id="add-button">Tambah</button>
+        </div>
+
+        <table id="todo-table">
+            <thead>
+                <tr>
+                    <th>Kegiatan</th>
+                    <th>Selesai</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="task-name">Mengerjakan tugas kuliah</td>
+                    <td class="task-action">
+                        <input type="checkbox" class="task-checkbox">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="task-name">Berbelanja kebutuhan dapur</td>
+                    <td class="task-action">
+                        <input type="checkbox" class="task-checkbox">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <footer>
+            <p>Semoga website ini bisa membantu kamu untuk mengerjakan sesuatu ya! *Have a nice day (⁠≧⁠▽⁠≦⁠)*</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
