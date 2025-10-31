@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fce4ec; /* Background pink muda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #4a148c; /* Warna teks ungu gelap */
+}
+
+.container {
+    background-color: #fff; /* Kontainer putih */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+header h1 {
+    color: #e91e63; /* Pink terang untuk judul */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header p {
+    text-align: center;
+    font-style: italic;
+    color: #880e4f; /* Pink gelap untuk deskripsi */
+    margin-bottom: 20px;
+}
+
+.input-section {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#todo-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 2px solid #f06292; /* Border pink */
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+#add-button {
+    padding: 10px 15px;
+    background-color: #ec407a; /* Pink cerah untuk tombol */
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#add-button:hover {
+    background-color: #d81b60; /* Pink lebih gelap saat hover */
+}
+
+#todo-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+#todo-table th, #todo-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #f8bbd0; /* Garis pink muda */
+}
+
+#todo-table th {
+    background-color: #f48fb1; /* Header pink sedang */
+    color: white;
+    font-weight: bold;
+}
+
+/* Garis tengah untuk kegiatan yang sudah selesai */
+.completed .task-name {
+    text-decoration: line-through;
+    color: #9e9e9e; /* Teks abu-abu */
+}
+
+.task-action {
+    text-align: center;
+    width: 60px; /* Lebar kolom aksi */
+}
+
+.task-checkbox {
+    transform: scale(1.5); /* Memperbesar kotak centang */
+    accent-color: #e91e63; /* Warna centang pink */
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #f8bbd0;
+    font-size: 14px;
+    color: #880e4f;
+}
